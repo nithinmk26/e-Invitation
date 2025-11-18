@@ -116,3 +116,6 @@ wedding-invitation/
 You may use, modify, and deploy freely for personal invitation purposes.
 
 Enjoy and congratulations! 🎉
+
+
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned -Force; $nodePath='C:\Program Files\nodejs'; if(-not ($Env:Path -split ';' | Where-Object { $_ -eq $nodePath })) { [Environment]::SetEnvironmentVariable('Path', $nodePath + ';' + $Env:Path, 'User') }; $Env:Path = $nodePath + ';' + $Env:Path;
